@@ -14,7 +14,7 @@ int main() {
 
     switch (choice) {
         case 1:
-            printf("B.tech Cse\n");
+            printf("B.tech Cse amity university\n");
             break;
 	case 2:
 	    printf("B.tech aiml\n");
