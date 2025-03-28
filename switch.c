@@ -22,3 +22,11 @@ int main() {
 	case 3:
 	    printf("B.tech ece\n");
 	    break;
+	case 4:
+	    printf("b.tech mec\n");
+	    break;
+	default:
+	    printf("invalid");
+    }
+}
+
