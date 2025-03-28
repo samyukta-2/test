@@ -16,3 +16,6 @@ int main() {
         case 1:
             printf("B.tech Cse\n");
             break;
+	case 2:
+	    printf("B.tech aiml\n");
+	    break;
