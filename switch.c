@@ -14,10 +14,10 @@ int main() {
 
     switch (choice) {
         case 1:
-            printf("B.tech Cse\n");
+            printf("B.tech Cse amity university\n");
             break;
 	case 2:
-	    printf("B.tech aiml\n");
+	    printf("B.tech aiml amity university\n");
 	    break;
 	case 3:
 	    printf("B.tech ece\n");
