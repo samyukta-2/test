@@ -20,7 +20,7 @@ int main() {
 	    printf("B.tech aiml amity university\n");
 	    break;
 	case 3:
-	    printf("B.tech ece\n");
+	    printf("B.tech ece amity university\n ");
 	    break;
 	case 4:
 	    printf("b.tech mec\n");
