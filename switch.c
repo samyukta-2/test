@@ -23,7 +23,7 @@ int main() {
 	    printf("B.tech ece amity university\n ");
 	    break;
 	case 4:
-	    printf("b.tech mec\n");
+	    printf("b.tech mec amity university\n");
 	    break;
 	default:
 	    printf("invalid");
