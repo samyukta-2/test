@@ -23,4 +23,11 @@ def remove_task():
             print("Invalid task number!")
     except ValueError:
         print("Please enter a valid number!")
-
+def main():
+    while True:
+        print("\nTo-Do List Menu:")
+        print("1. Show Tasks")
+        print("2. Add Task")
+        print("3. Remove Task")
+        print("4. Exit")
+        choice = input("Choose an option: ")
