@@ -17,3 +17,18 @@ def reveal(board, display, row, col, size):
 def play_minesweeper(size=5, num_mines=5):
     board, mines = create_board(size, num_mines)
     display = [['_'] * size for _ in range(size)]
+
+    while True:
+        print('\n'.join(' '.join(row) for row in display))
+        try:
+            row, col = map(int, input("Enter row and column: ").split())
+            if (row, col) in mines:
+                print("Boom! Game Over."); break
+            reveal(board, display, row, col, size)
+            if all(display[r][c] != '_' for r in range(size) for c in range(size) if (r, c) not in mines):
+                print("You won!"); break
+        except:
+            print("Invalid input.")
+
+play_minesweeper()
+
