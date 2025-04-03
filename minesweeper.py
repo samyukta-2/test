@@ -14,3 +14,6 @@ def reveal(board, display, row, col, size):
         for r in range(max(0, row-1), min(size, row+2)):
             for c in range(max(0, col-1), min(size, col+2)):
                 reveal(board, display, r, c, size)
+def play_minesweeper(size=5, num_mines=5):
+    board, mines = create_board(size, num_mines)
+    display = [['_'] * size for _ in range(size)]
