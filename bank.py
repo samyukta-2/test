@@ -13,3 +13,11 @@ def view_account():
         print("Balance:", acc["balance"])
     else:
         print("Account not found.")
+def deposit():
+    acc_no = input("Enter account number: ")
+    if acc_no in accounts:
+        amount = float(input("Enter amount to deposit: "))
+        accounts[acc_no]["balance"] += amount
+        print("Deposit successful.")
+    else:
+        print("Account not found.")
