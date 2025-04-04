@@ -30,3 +30,16 @@ def check_win(r, c, piece):
         if count >= 4:
             return True
     return False
+turn = 0
+while True:
+    print_board()
+    col = int(input(f"Player {turn+1} ({'X' if turn == 0 else 'O'}), pick column (0-{COLS-1}): "))
+    if 0 <= col < COLS and board[0][col] == " ":
+        row = drop(col, 'X' if turn == 0 else 'O')
+        if check_win(row, col, board[row][col]):
+            print_board()
+            print(f"Player {turn+1} wins!")
+            break
+        turn = 1 - turn
+    else:
+        print("Try another column.")
