@@ -21,3 +21,14 @@ def deposit():
         print("Deposit successful.")
     else:
         print("Account not found.")
+def withdraw():
+    acc_no = input("Enter account number: ")
+    if acc_no in accounts:
+        amount = float(input("Enter amount to withdraw: "))
+        if accounts[acc_no]["balance"] >= amount:
+            accounts[acc_no]["balance"] -= amount
+            print("Withdrawal successful.")
+        else:
+            print("Not enough balance.")
+    else:
+        print("Account not found.")
