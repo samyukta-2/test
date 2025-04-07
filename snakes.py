@@ -19,3 +19,15 @@ def move(player):
         player = 30
     print(f"Now at: {player}\n")
     return player
+while True:
+    print("Player 1's turn")
+    player1 = move(player1)
+    if player1 == 30:
+        print("Player 1 wins!")
+        break
+
+    print("Player 2's turn")
+    player2 = move(player2)
+    if player2 == 30:
+        print("Player 2 wins!")
+        break
