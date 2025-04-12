@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Encrypt/Decrypt</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>🔐 Encrypt & Decrypt</h2>
+    
+    <textarea id="message" placeholder="Enter your message here..."></textarea>
+    
+    <input type="number" id="shift" value="3" min="1" max="25" />
+    
+    <div class="buttons">
+      <button onclick="encrypt()">Encrypt</button>
+      <button onclick="decrypt()">Decrypt</button>
+    </div>
+    
+    <h3>Result:</h3>
+    <div id="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
