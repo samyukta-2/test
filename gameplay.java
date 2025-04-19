@@ -61,3 +61,15 @@ private Timer timer;
                 ballDirX = -ballDirX;
             }
         }
+	repaint();
+    }
+
+    public void keyPressed(KeyEvent e) {
+        if (e.getKeyCode() == KeyEvent.VK_RIGHT) {
+            if (playerX >= 600) {
+                playerX = 600;
+            } else {
+                moveRight();
+            }
+        }
+
