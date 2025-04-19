@@ -38,3 +38,16 @@ public AttendanceApp() {
 
         try (Connection conn = DriverManager.getConnection(url, user, password);
              PreparedStatement stmt = conn.prepareStatement(sql)) { 
+		stmt.setString(1, studentName);
+            stmt.setDate(2, Date.valueOf(LocalDate.now()));
+            stmt.setString(3, "Present");
+
+            int rowsInserted = stmt.executeUpdate();
+            if (rowsInserted > 0) {
+                JOptionPane.showMessageDialog(this, "Attendance marked for " + studentName);
+            }
+        } catch (SQLException ex) {
+            ex.printStackTrace();
+            JOptionPane.showMessageDialog(this, "Error marking attendance.");
+        }
+    }
