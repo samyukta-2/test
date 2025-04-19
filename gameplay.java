@@ -72,4 +72,17 @@ private Timer timer;
                 moveRight();
             }
         }
+if (e.getKeyCode() == KeyEvent.VK_LEFT) {
+            if (playerX <= 10) {
+                playerX = 10;
+            } else {
+                moveLeft();
+            }
+        }
+    }
+
+    public void moveRight() {
+        play = true;
+        playerX += 20;
+    }
 
