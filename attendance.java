@@ -51,3 +51,10 @@ public AttendanceApp() {
             JOptionPane.showMessageDialog(this, "Error marking attendance.");
         }
     }
+    public static void main(String[] args) {
+        SwingUtilities.invokeLater(() -> {
+            new AttendanceApp().setVisible(true);
+        });
+    }
+}
+
