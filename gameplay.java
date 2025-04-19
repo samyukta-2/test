@@ -85,4 +85,11 @@ if (e.getKeyCode() == KeyEvent.VK_LEFT) {
         play = true;
         playerX += 20;
     }
+public void moveLeft() {
+        play = true;
+        playerX -= 20;
+    }
 
+    public void keyReleased(KeyEvent e) {}
+    public void keyTyped(KeyEvent e) {}
+}
