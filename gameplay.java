@@ -17,3 +17,47 @@ private Timer timer;
     private int ballPosY = 350;
     private int ballDirX = -1;
     private int ballDirY = -2;
+    public GamePlay() {
+        addKeyListener(this);
+        setFocusable(true);
+        setFocusTraversalKeysEnabled(false);
+        timer = new Timer(delay, this);
+        timer.start();
+    }
+
+    public void paint(Graphics g) {
+        g.setColor(Color.black);
+        g.fillRect(1, 1, 692, 592);
+
+        g.setColor(Color.yellow);
+        g.fillRect(0, 0, 3, 592);
+        g.fillRect(0, 0, 692, 3);
+        g.fillRect(691, 0, 3, 592);
+        g.setColor(Color.green);
+        g.fillRect(playerX, 550, 100, 8);
+
+        g.setColor(Color.yellow);
+        g.fillOval(ballPosX, ballPosY, 20, 20);
+
+        g.dispose();
+    }
+
+    public void actionPerformed(ActionEvent e) {
+        timer.start();
+        if (play) {
+            ballPosX += ballDirX;
+            ballPosY += ballDirY;
+
+            
+            if (ballPosX < 0) {
+                ballDirX = -ballDirX;
+            }
+            
+            if (ballPosY < 0) {
+                ballDirY = -ballDirY;
+            }
+            
+            if (ballPosX > 670) {
+                ballDirX = -ballDirX;
+            }
+        }
