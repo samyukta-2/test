@@ -51,3 +51,13 @@ def go_right():
     if head.direction != "left":
         head.direction = "right"
 
+def move():
+    if head.direction == "up":
+        head.sety(head.ycor() + 20)
+    if head.direction == "down":
+        head.sety(head.ycor() - 20)
+    if head.direction == "left":
+        head.setx(head.xcor() - 20)
+    if head.direction == "right":
+        head.setx(head.xcor() + 20)
+
