@@ -67,3 +67,11 @@ win.onkeypress(go_down, "s")
 win.onkeypress(go_left, "a")
 win.onkeypress(go_right, "d")
 
+while True:
+    win.update()
+
+    if abs(head.xcor()) > 290 or abs(head.ycor()) > 290:
+        time.sleep(1)
+        head.goto(0, 0)
+        head.direction = "stop"
+
