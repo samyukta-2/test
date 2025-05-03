@@ -98,4 +98,7 @@ while True:
         if score > high_score:
             high_score = score
         pen.clear()
+         pen.write(f"Score: {score}  High Score: {high_score}",
+                  align="center", font=("Courier", 24, "normal"))
+
 
