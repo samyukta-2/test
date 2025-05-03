@@ -61,3 +61,9 @@ def move():
     if head.direction == "right":
         head.setx(head.xcor() + 20)
 
+win.listen()
+win.onkeypress(go_up, "w")
+win.onkeypress(go_down, "s")
+win.onkeypress(go_left, "a")
+win.onkeypress(go_right, "d")
+
