@@ -35,3 +35,7 @@ pen.hideturtle()
 pen.goto(0, 260)
 pen.write("Score: 0  High Score: 0", align="center", font=("Courier", 24, "normal"))
 
+def go_up():
+    if head.direction != "down":
+        head.direction = "up"
+
