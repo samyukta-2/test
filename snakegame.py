@@ -100,5 +100,6 @@ while True:
         pen.clear()
          pen.write(f"Score: {score}  High Score: {high_score}",
                   align="center", font=("Courier", 24, "normal"))
-
+for i in range(len(segments)-1, 0, -1):
+        segments[i].goto(segments[i-1].pos())
 
