@@ -75,3 +75,10 @@ while True:
         head.goto(0, 0)
         head.direction = "stop"
 
+    for segment in segments:
+            segment.goto(1000, 1000)
+        segments.clear()
+        score = 0
+        pen.clear()
+        pen.write(f"Score: {score}  High Score: {high_score}",
+                  align="center", font=("Courier", 24, "normal"))
