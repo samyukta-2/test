@@ -82,3 +82,9 @@ while True:
         pen.clear()
         pen.write(f"Score: {score}  High Score: {high_score}",
                   align="center", font=("Courier", 24, "normal"))
+
+        if head.distance(food) < 20:
+        x = random.randint(-280, 280)
+        y = random.randint(-280, 280)
+        food.goto(x, y)
+
