@@ -11,3 +11,8 @@ if not os.path.exists(music_file):
 pygame.mixer.music.load(music_file)
 pygame.mixer.music.play()
 
+print("Playing music... Press Enter to stop.")
+input() 
+
+pygame.mixer.music.stop()
+
