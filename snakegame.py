@@ -94,3 +94,8 @@ while True:
         new_segment.penup()
         segments.append(new_segment)
 
+        score += 10
+        if score > high_score:
+            high_score = score
+        pen.clear()
+
