@@ -9,3 +9,6 @@ def higher_lower_game():
         if guess.lower() == 'exit':
             print(f"You gave up! The number was {secret_number}.")
             break
+        if not guess.isdigit():
+            print("Invalid input. Please enter a number.")
+            continue
