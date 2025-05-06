@@ -21,3 +21,5 @@ def higher_lower_game():
         else:
             print(f"Congratulations! You guessed the number in {attempts} attempts!")
             break
+        if __name__ == "__main__":
+    higher_lower_game()
