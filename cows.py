@@ -22,3 +22,6 @@ def play_cows_and_bulls():
          if guess.lower() == 'exit':
             print(f"You gave up! The number was {secret_number}.")
             break
+        if len(guess) != 4 or not guess.isdigit():
+            print("Invalid input. Please enter a 4-digit number.")
+            continue
