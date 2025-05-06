@@ -19,3 +19,6 @@ def play_cows_and_bulls():
 
      while True:
         guess = input("Enter your 4-digit guess (or type 'exit' to quit): ")
+         if guess.lower() == 'exit':
+            print(f"You gave up! The number was {secret_number}.")
+            break
