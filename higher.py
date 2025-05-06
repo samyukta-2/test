@@ -18,3 +18,6 @@ def higher_lower_game():
             print("Higher!")
         elif guess > secret_number:
             print("Lower!")
+        else:
+            print(f"Congratulations! You guessed the number in {attempts} attempts!")
+            break
