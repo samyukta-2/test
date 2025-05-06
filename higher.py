@@ -6,3 +6,6 @@ def higher_lower_game():
     attempts = 0
     while True:
         guess = input("Guess a number between 1 and 100 (or type 'exit' to quit): ")
+        if guess.lower() == 'exit':
+            print(f"You gave up! The number was {secret_number}.")
+            break
