@@ -12,3 +12,5 @@ def higher_lower_game():
         if not guess.isdigit():
             print("Invalid input. Please enter a number.")
             continue
+         guess = int(guess)
+        attempts += 1
