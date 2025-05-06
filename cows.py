@@ -31,3 +31,5 @@ def play_cows_and_bulls():
         if cows == 4:
             print(f"Congratulations! You guessed the number in {attempts} attempts!")
             break
+        if __name__ == "__main__":
+    play_cows_and_bulls()
