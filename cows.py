@@ -16,3 +16,6 @@ def play_cows_and_bulls():
     print("Welcome to the Cows and Bulls Game!")
     secret_number = generate_number()
     attempts = 0
+
+     while True:
+        guess = input("Enter your 4-digit guess (or type 'exit' to quit): ")
