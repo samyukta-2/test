@@ -28,3 +28,6 @@ def play_cows_and_bulls():
         attempts += 1
         cows, bulls = calculate_cows_and_bulls(secret_number, guess)
         print(f"{cows} cow(s), {bulls} bull(s)")
+        if cows == 4:
+            print(f"Congratulations! You guessed the number in {attempts} attempts!")
+            break
