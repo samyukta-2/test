@@ -25,3 +25,5 @@ def play_cows_and_bulls():
         if len(guess) != 4 or not guess.isdigit():
             print("Invalid input. Please enter a 4-digit number.")
             continue
+        attempts += 1
+        cows, bulls = calculate_cows_and_bulls(secret_number, guess)
