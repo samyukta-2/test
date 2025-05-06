@@ -27,3 +27,4 @@ def play_cows_and_bulls():
             continue
         attempts += 1
         cows, bulls = calculate_cows_and_bulls(secret_number, guess)
+        print(f"{cows} cow(s), {bulls} bull(s)")
