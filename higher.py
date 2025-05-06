@@ -14,3 +14,5 @@ def higher_lower_game():
             continue
          guess = int(guess)
         attempts += 1
+        if guess < secret_number:
+            print("Higher!")
