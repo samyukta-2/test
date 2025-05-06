@@ -5,3 +5,9 @@ def generate_number():
     digits = list(range(10))
     random.shuffle(digits)
     return ''.join(map(str, digits[:4]))
+
+def calculate_cows_and_bulls(secret, guess):
+    """Calculate the number of cows and bulls."""
+    cows = sum(s == g for s, g in zip(secret, guess))
+    bulls = sum(min(secret.count(d), guess.count(d)) for d in set(guess)) - cows
+    return cows, bulls
